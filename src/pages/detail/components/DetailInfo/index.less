@@ -1,0 +1,114 @@
+.infoBox {
+  margin-top: 0.2rem;
+
+  .infoTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .topLeft {
+      .title {
+        max-width: 5.6rem;
+        height: 0.56rem;
+        font-size: 0.4rem;
+        font-family: PingFang HK;
+        font-weight: 500;
+        line-height: 0.56rem;
+        color: #333333;
+        margin-bottom: 0.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .tags {
+        display: flex;
+        width: 6.3rem;
+        overflow: hidden;
+        div {
+          border-radius: 0.04rem;
+          white-space: nowrap;
+          margin-right: 0.16rem;
+          text-align: center;
+          color: white;
+          height: 0.32rem;
+          line-height: 0.12rem;
+          padding: 0.1rem;
+          font-size: 0.22rem;
+          font-family: PingFang SC;
+          font-weight: 400;
+          background: linear-gradient(270deg, #e84490 0%, #ff876a 100%);
+        }
+      }
+    }
+
+    .share {
+      text-align: center;
+
+      .icon {
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-image: url('~@/assets/images/detail/share@2x.png');
+        background-size: 100% 100%;
+        margin-bottom: 0.1rem;
+      }
+
+      .word {
+        height: 0.32rem;
+        font-size: 0.22rem;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 0.32rem;
+        color: #eb4c8c;
+      }
+    }
+  }
+
+  .descBox {
+    margin-top: 0.34rem;
+
+    .descTitle {
+      height: 0.4rem;
+      font-size: 0.28rem;
+      font-family: PingFang HK;
+      font-weight: 700;
+      line-height: 0.4rem;
+      color: #333333;
+
+      span {
+        display: inline-block;
+        width: 0.28rem;
+        height: 0.28rem;
+        line-height: 0.4rem;
+        background-image: url('~@/assets/images/detail/more@2x.png');
+        background-size: 100% 100%;
+        vertical-align: middle;
+      }
+    }
+    .desc {
+      width: 7.1rem;
+      height: 0.68rem;
+      font-size: 0.24rem;
+      font-family: PingFang HK;
+      font-weight: 400;
+      line-height: 0.34rem;
+      color: #666666;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .descMore {
+      width: 7.1rem;
+      height: 100%;
+      font-size: 0.24rem;
+      font-family: PingFang HK;
+      font-weight: 400;
+      line-height: 0.34rem;
+      color: #666666;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+export default [
+  { path: '/', redirect: '/home' },
+  { path: '/', component: '@/pages/home' },
+  {
+    path: '/home',
+    title: 'home.title',
+    name: 'home',
+    isMenu: true,
+    component: '@/pages/home',
+  },
+  {
+    path: '/detail',
+    title: 'detail.title',
+    name: 'detail',
+    isMenu: true,
+    component: '@/pages/detail',
+  },
+  {
+    path: '/shareDetail',
+    title: 'shareDetail.title',
+    name: 'shareDetail',
+    isMenu: true,
+    component: '@/pages/shareDetail',
+  },
+  {
+    path: '/filter',
+    title: 'filter.title',
+    name: 'filter',
+    isMenu: true,
+    component: '@/pages/filter',
+  },
+  {
+    path: '/special',
+    name: 'special',
+    isMenu: true,
+    component: '@/pages/special',
+  },
+  {
+    path: '/search',
+    title: 'search.title',
+    name: 'search',
+    isMenu: true,
+    component: '@/pages/search',
+  },
+  {
+    path: '/activity',
+    title: 'activity.title',
+    name: 'activity',
+    isMenu: true,
+    component: '@/pages/activity',
+  },
+];

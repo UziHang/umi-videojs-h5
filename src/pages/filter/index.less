@@ -1,0 +1,30 @@
+.filterBox {
+  width: 100%;
+  .filterContent {
+    margin-bottom: 0.44rem;
+    touch-action: pan-x;
+    .filterType {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      overflow-x: auto;
+      margin-bottom: 0.2rem;
+      touch-action: pan-x;
+      div {
+        text-align: center;
+        height: 0.48rem;
+        line-height: 0.48rem;
+        flex-shrink: 0;
+        padding: 0 0.32rem;
+        color: #333333;
+        font-family: PingFang HK;
+        font-size: 0.24rem;
+        touch-action: pan-x;
+      }
+      .active {
+        background: linear-gradient(270deg, #e84490 0%, #ff876a 100%);
+        color: white;
+      }
+    }
+  }
+}

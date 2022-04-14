@@ -1,0 +1,53 @@
+.flex_container {
+  margin-top: -5rem;
+  margin-bottom: 0.3rem;
+  .bgBox {
+    width: 7.1rem;
+    height: 5.3rem;
+    top: 5.3rem;
+    background-size: cover;
+    position: relative;
+  }
+  .bigBox {
+    .flex_box {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 7.1rem;
+      margin-top: 1rem;
+      overflow: hidden;
+      overflow-x: auto;
+      touch-action: pan-x pan-y;
+      .flex_item {
+        width: 2rem;
+        height: 3.5rem;
+        margin-right: 0.1rem;
+        flex-shrink: 0;
+        position: relative;
+        border-radius: 0.04rem;
+        overflow: hidden;
+        touch-action: pan-x pan-y;
+        .img_box {
+          flex-shrink: 0;
+          width: 2rem;
+          height: 2.88rem;
+          touch-action: pan-x pan-y;
+          img {
+            flex-shrink: 0;
+            width: 100%;
+            height: 100%;
+            touch-action: pan-x pan-y;
+          }
+        }
+
+        .content_title {
+          flex-shrink: 0;
+          width: 2rem;
+          color: white;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

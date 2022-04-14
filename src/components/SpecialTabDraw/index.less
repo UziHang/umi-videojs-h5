@@ -1,0 +1,149 @@
+.bodyBox {
+  .topTitle {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .nameBox {
+    width: 60vw;
+    height: 6vw;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(247, 157, 73, 0.4);
+    color: white;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+  }
+
+  .ruleBtn,
+  .listBtn {
+    width: 25px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+    position: absolute;
+    padding: 4px;
+    left: 90%;
+    top: 3vh;
+    background-image: linear-gradient(315deg, #f42948 0%, #fb4c8b 100%);
+    color: azure;
+    border-radius: 4px;
+  }
+  .listBtn {
+    top: 16vh;
+  }
+
+  .inputBox {
+    display: flex;
+    margin-top: 86vw;
+    margin-left: 5vw;
+    .square {
+      margin-top: 3px;
+      margin-left: 2px;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 10px solid #fa9fc0;
+      opacity: 1;
+    }
+  }
+  .videoBox {
+    width: 80vw;
+    margin: 0 auto;
+    .videoItem {
+      height: 48vw;
+      overflow: hidden;
+      margin: 8vw auto;
+    }
+  }
+
+  .enterBtn {
+    position: fixed;
+    top: 90vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    .linkToApp {
+      font-size: 20px;
+      text-align: center;
+      position: relative;
+      color: #636055;
+      border-radius: 0.44rem;
+      background-color: #ffd800;
+      width: 6.3rem;
+      height: 0.86rem;
+      line-height: 0.86rem;
+      display: inline-block;
+    }
+  }
+  .popBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100vw;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bodyBox,
+    .listBox {
+      width: 90vw;
+      height: 60vh;
+      background-image: url('~@/assets/images/draw/rule.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+
+      .title {
+        text-align: center;
+        font-size: 24px;
+      }
+      .contentBox {
+        width: 70vw;
+        height: 40vh;
+        margin: 20vw auto;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+      }
+    }
+    .listBox {
+      background-image: url('~@/assets/images/draw/list.png');
+      .contentBox {
+        text-align: center;
+        .word {
+          font-size: 16px;
+          color: #991822;
+        }
+        .date {
+          font-size: 16px;
+          color: rgb(155, 113, 113);
+          font-weight: 700;
+          margin: 8px auto;
+        }
+        .userBox {
+          margin-left: 3vw;
+          .userItem {
+            text-align: left;
+            font-size: 14px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+    .quit {
+      position: absolute;
+      top: 82vh;
+      height: 0.64rem;
+      width: 0.64rem;
+      background-image: url('~@/assets/images/index/quit.png');
+      background-size: cover;
+    }
+  }
+}

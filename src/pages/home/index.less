@@ -1,0 +1,48 @@
+.MuiTabs-root {
+  height: 0.4rem;
+  .MuiTabScrollButton-root {
+    width: 0.48rem;
+    .MuiSvgIcon-root {
+      width: 0.5em;
+      height: 0.5em;
+    }
+  }
+  .MuiTab-wrapper {
+    font-size: 0.32rem;
+    line-height: 0.42rem;
+    font-family: PingFang HK;
+    font-weight: 700 !important;
+    img {
+      width: 100%;
+      height: 0.4rem;
+    }
+  }
+  .Mui-selected span {
+    color: #ee4a57ff;
+    font-size: 0.36rem !important;
+    line-height: 0.4rem;
+    img {
+      width: 110%;
+      height: 0.41rem;
+    }
+  }
+
+  .MuiTabs-indicator {
+    background-color: #ee4a57ff;
+    bottom: 3px;
+    // width: 30px !important;
+    height: 3px;
+  }
+
+  .MuiTabs-indicator::after {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    display: block;
+    content: '';
+    background-color: #ee4a57;
+    transform: rotate(45deg);
+    top: -2px;
+    left: 45%;
+  }
+}

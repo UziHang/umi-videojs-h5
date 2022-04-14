@@ -1,0 +1,220 @@
+.leaveBtn {
+  position: absolute;
+  left: 20vw;
+  top: 85vh;
+  width: 60vw;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  z-index: 1;
+  background: linear-gradient(90deg, #ffd000 0%, #fdb201 100%);
+  box-shadow: 0px 2px 4px rgba(191, 42, 87, 0.16);
+  opacity: 1;
+  border-radius: 19px;
+  color: #efefef;
+}
+
+.container {
+  .topImg {
+    width: 7.5rem;
+    height: 6.71rem;
+    background-image: url('~@/assets/images/activity/topImg@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .timeBox {
+    width: 7.5rem;
+    height: 7.42rem;
+    background-image: url('~@/assets/images/activity/time@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+
+    .timeTitle {
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-bottom: 0.2rem;
+      width: 3.12rem;
+      height: 0.64rem;
+      background: url('~@/assets/images/activity/time_title.png') no-repeat;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .coinBox {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      width: 6.6rem;
+      height: 3rem;
+
+      .coinItem {
+        width: 1.5rem;
+        height: 2.2rem;
+        background-image: url('~@/assets/images/activity/coin@2x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+
+        .top {
+          margin-left: 0.9rem;
+          margin-bottom: 0.78rem;
+
+          span {
+            font-size: 0.24 rem;
+            font-family: PingFang SC;
+            font-weight: 600;
+            line-height: 0.34rem;
+            color: #e8587e;
+          }
+
+          .x {
+            font-size: 0.18rem;
+          }
+        }
+
+        .content {
+          font-size: 0.2rem;
+          font-family: PingFang HK;
+          font-weight: 400;
+          line-height: 0.28rem;
+          color: #e8587e;
+          margin-bottom: 0.246rem;
+        }
+
+        .button {
+          margin: 0 auto;
+          text-align: center;
+          width: 1rem;
+          height: 0.36rem;
+          font-family: PingFang SC;
+          font-weight: 400;
+          line-height: 0.36rem;
+          border-radius: 0.18rem;
+          font-size: 0.2rem;
+          color: #ffffff;
+          background: linear-gradient(91deg, #f48b8b 0%, #ff5f89 100%);
+        }
+      }
+    }
+
+    .timeContent {
+      width: 6.4rem;
+      margin: 0.5rem auto;
+      font-size: 0.2rem;
+      font-family: PingFang HK;
+      font-weight: 500;
+      line-height: 0.28rem;
+      color: #000000;
+
+      .timeTop {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          height: 0.28rem;
+        }
+      }
+
+      .content_bar {
+        overflow: hidden;
+        margin: 0.3rem auto;
+        display: flex;
+        width: 5.9rem;
+        height: 0.16rem;
+        border: 1px solid #b4b0b0;
+        border-radius: 0.08rem;
+        background: linear-gradient(
+          180deg,
+          #f4f4f4 0%,
+          #fdfdfd 31%,
+          #ffffff 69%,
+          #efefef 100%
+        );
+
+        .bar_me {
+          width: 2rem;
+          height: 0.14rem;
+          border-radius: 0.5rem;
+          background: #e66688;
+          opacity: 1;
+          z-index: 1;
+        }
+
+        .bar_friend {
+          width: 1rem;
+          height: 0.14rem;
+          border-radius: 0.5rem;
+          background: #ffb7ce;
+          opacity: 1;
+          margin-left: -0.2rem;
+        }
+      }
+
+      .summary {
+        height: 0.28rem;
+        display: flex;
+
+        div {
+          margin-right: 0.3rem;
+
+          span {
+            display: inline-block;
+            width: 0.22rem;
+            height: 0.22rem;
+            background: #e66688;
+            margin-right: 0.1rem;
+          }
+        }
+
+        .friend {
+          span {
+            background: #ffb7ce;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rulerBox {
+  width: 100%;
+  height: 9.22rem;
+  background-image: url('~@/assets/images/activity/ruler@2x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 0.5rem;
+
+  .rulerTitle {
+    margin: 0.3rem auto;
+    // margin-bottom: 0rem;
+    width: 2.38rem;
+    height: 0.64rem;
+    background: url('~@/assets/images/activity/ruler_title.png') no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  div {
+    margin: 0.1rem 0.5rem;
+
+    span {
+      display: block;
+      font-size: 0.24rem;
+      font-family: PingFang HK;
+      font-weight: 400;
+      line-height: 0.4rem;
+      color: #636055;
+      opacity: 1;
+    }
+  }
+}

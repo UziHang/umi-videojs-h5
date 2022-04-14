@@ -1,0 +1,81 @@
+<!doctype html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-title" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <script src="https://unpkg.com/vconsole/dist/vconsole.min.js"></script>
+  <!-- 搜狐定位api -->
+  <!-- <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script> -->
+  <!-- m3u8播放兼容静态包 -->
+  <script type="text/babel" src="../assets/js/videojs-contrib-hls.min.js"></script>
+  <title>无忧行看世界</title>
+  <script type="text/javascript">
+     localStorage.clear();
+    //移动自适应
+    ! function (e, t) {
+      var a = e.documentElement,
+        n = "orientationchange" in window ? "orientationchange" : "resize",
+        i = function () {
+          var e = a.clientWidth;
+          e && (a.style.fontSize = 750 <= e ? "100px" : e / 750 * 100 + "px")
+        };
+      i(),
+        e.addEventListener && (t.addEventListener(n, i, !1), e.addEventListener("DOMContentLoaded", i, !1))
+    }(document, window);
+
+
+    // 引入 Promise 的 fallback 支持 (部分安卓手机不支持 Promise)
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' +
+        '>' + '<' + '/' + 'script>');
+    }
+
+    // 接入百度统计
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4926cf3d2b853ff341b5b083520ef6a1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+
+
+    // 引入Vconsole
+
+
+    //获取语言版本&&用户信息
+    try {
+      if (navigator.userAgent.includes('jegotrip')) {
+        let userInfo = JSON.parse(Jegotrip.getUserInfo())
+        console.log(`userInfo:${JSON.stringify(userInfo)}`);
+        console.log(Jegotrip.getUserInfo());
+        userInfo && localStorage.setItem('userInfo',JSON.stringify(userInfo))
+        userInfo.userCode && localStorage.setItem('userCode', userInfo.userCode)
+        userInfo.mobile && localStorage.setItem('mobile', userInfo.mobile)
+        let testUser = ['15605153669', '18010101082', '13801599417', '18815285852','46202924']
+        if (testUser.includes(localStorage.getItem('mobile'))) {
+          var vConsole = new window.VConsole();
+        }
+      } else { //当终端方法不存在时
+      }
+    } catch (error) { // 当终端方法报错时
+      console.log(error);
+    }
+
+    if(window.location.href.includes('112.17.251.186')) {
+      var vConsole = new window.VConsole();
+    }
+  </script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

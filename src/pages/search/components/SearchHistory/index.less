@@ -1,0 +1,46 @@
+.historyBox {
+  width: 100%;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    span:first-child {
+      height: 0.44rem;
+      font-size: 0.32rem;
+      font-family: PingFang SC;
+      font-weight: 600;
+      line-height: 0.44rem;
+      color: #333333;
+      opacity: 1;
+    }
+    span:last-child {
+      margin-top: 0.14rem;
+      display: inline-block;
+      height: 0.3rem;
+      width: 0.3rem;
+      background-image: url('~@/assets/images/search/delete.png');
+      background-size: cover;
+    }
+  }
+
+  .listBox {
+    display: flex;
+    flex-wrap: wrap;
+
+    .historyItem {
+      padding: 0 0.3rem;
+      height: 0.54rem;
+      line-height: 0.52rem;
+      border: 1px solid #333333;
+      border-radius: 0.27rem;
+      margin: 0.16rem 0.16rem 0.16rem 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .historyItem:last-child {
+      margin-right: auto;
+    }
+  }
+}
